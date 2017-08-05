@@ -2,6 +2,11 @@
 
 > 提供地图图层加载时的loading层和事件，支持openlayers3+ 以上。
 
+> 基于eblondel的ol3-loadingpanel修改，原有扩展已不能使用。 [原地址](https://github.com/eblondel/ol3-loadingpanel)
+
+[![Build Status](https://www.travis-ci.org/aurorafe/ol-control-loading.svg?branch=master)](https://www.travis-ci.org/aurorafe/ol-control-loading)
+[![NPM](https://nodei.co/npm/aurorafe/ol-control-loading.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/aurorafe/ol-control-loading/)
+
 ## build
 
 > 重要: Github 仓库的 /dist 文件夹只有在新版本发布时才会更新。如果想要使用 Github 上最新的源码，你需要自己构建。
@@ -39,7 +44,7 @@ import 'ol-control-loading'
 
 ![animatedGif](https://raw.githubusercontent.com/aurorafe/ol-control-loading/master/asset/animatedGif.gif)
 
-![progressBar](https://raw.githubusercontent.com/aurorafe/ol-control-loading/master/asset/demo/progressBar.gif)
+![progressBar](https://raw.githubusercontent.com/aurorafe/ol-control-loading/master/asset/progressBar.gif)
 
 其他示例请参看example文件夹
 
