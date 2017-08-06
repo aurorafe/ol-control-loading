@@ -5,5 +5,5 @@ cache:
     - node_modules
 install: npm install
 script:
-- node build/development.js
-- node build/build.js
+- npm run dev
+- npm run build
