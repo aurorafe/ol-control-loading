@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const env = require('yargs').argv.env
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
@@ -22,7 +23,7 @@ module.exports = merge(baseWebpackConfig, {
     })
   },
   devtool: devtool,
-  watch: true,
+  watch: ((env === 'nowatch') ? false : (env !== 'nowatch')),
   watchOptions: {
     aggregateTimeout: 300,
     poll: 1000,
