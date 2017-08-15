@@ -27,10 +27,10 @@ npm run build
 ### CDN
 
 ```bash
-https://unpkg.com/ol-control-loading@1.0.0/dist/ol-control-loading.min.js
-https://unpkg.com/ol-control-loading@1.0.0/dist/ol-control-loading.js
-https://unpkg.com/ol-control-loading@1.0.0/dist/static/css/ol-control-loading.css
-https://unpkg.com/ol-control-loading@1.0.0/dist/static/css/ol-control-loading.min.css
+https://unpkg.com/ol-control-loading@1.2.0/dist/ol-control-loading.min.js
+https://unpkg.com/ol-control-loading@1.2.0/dist/ol-control-loading.js
+https://unpkg.com/ol-control-loading@1.2.0/dist/static/css/ol-control-loading.css
+https://unpkg.com/ol-control-loading@1.2.0/dist/static/css/ol-control-loading.min.css
 ```
 
 ### NPM
@@ -42,9 +42,9 @@ import 'ol-control-loading'
 
 ## Examples
 
-![animatedGif](https://raw.githubusercontent.com/aurorafe/ol-control-loading/master/asset/animatedGif.gif)
+[![animatedGif](https://raw.githubusercontent.com/aurorafe/ol-control-loading/master/asset/animatedGif.gif)](https://codepen.io/sakitam-fdd/pen/JyOPPa)
 
-![progressBar](https://raw.githubusercontent.com/aurorafe/ol-control-loading/master/asset/progressBar.gif)
+[![progressBar](https://raw.githubusercontent.com/aurorafe/ol-control-loading/master/asset/progressBar.gif)](https://codepen.io/sakitam-fdd/pen/eEeOYe)
 
 其他示例请参看example文件夹
 
@@ -76,7 +76,7 @@ import 'ol-control-loading'
 
 ##### `progressDetails()`
 
-> 返回当前进度详情， [loaded,toload] values.
+> 返回当前进度详情， [loaded, toload] values.
 
 ##### `progress()`
 

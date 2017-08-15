@@ -1,6 +1,6 @@
 {
   "name": "ol-control-loading",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "openlayers loading",
   "main": "src/index.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "url": "https://github.com/aurorafe/ol-control-loading.git"
   },
   "dependencies": {
+    "nature-dom-util": "^1.0.0",
     "openlayers": "^4.0.1"
   },
   "devDependencies": {

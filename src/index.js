@@ -2,7 +2,8 @@
  * Created by FDD on 2017/7/21.
  * @desc 全局地图加载loading
  */
-import {DomUtil, css} from './dom'
+import * as css from './dom/css'
+let htmlUtils = require('nature-dom-util/src/domUtils')
 import './scss/loading.scss'
 ol.control.Loading = function (params) {
   /**
@@ -57,11 +58,11 @@ ol.control.Loading = function (params) {
   let className = (this.options.className !== undefined ? this.options.className : 'hmap-loading-panel')
   // DOM
   let elementDom = (this.widget === 'animatedGif') ? 'span' : 'progress'
-  let element = DomUtil.create(elementDom, (className + ' ' + css.CLASS_UNSELECTABLE))
+  let element = htmlUtils.create(elementDom, (className + ' ' + css.CLASS_UNSELECTABLE))
   if (this.widget === 'progressBar') {
     // element progress bar for old browsers
-    let div = DomUtil.create('div', 'hmap-progress-bar')
-    DomUtil.create('span', '', div)
+    let div = htmlUtils.create('div', 'hmap-progress-bar')
+    htmlUtils.create('span', '', div)
   }
   this.onCustomStart = (this.options['onStart'] ? this.options['onStart'] : false)
   this.onCustomProgress = (this.options['onProgress'] ? this.options['onProgress'] : false)
@@ -330,3 +331,6 @@ ol.control.Loading.prototype.setMap = function (map) {
     this.setup()
   }
 }
+
+let _olControlLoading_ = ol.control.Loading
+export default _olControlLoading_

@@ -24,12 +24,17 @@ module.exports = {
     rules: [
       {
         test: /(\.jsx|\.js)$/,
-        enforce: 'pre',  // 在babel-loader对源码进行编译前进行lint的检查
-        loaders: [
-          'babel-loader',
-          'eslint-loader'
-        ],
-        exclude: /(node_modules|bower_components)/
+        loader: 'eslint-loader',
+        enforce: 'pre',
+        include: [resolve('src'), resolve('test')],
+        options: {
+          formatter: require('eslint-friendly-formatter')
+        }
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        include: [resolve('src'), resolve('test'), resolve('node_modules')]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
