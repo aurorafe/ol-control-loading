@@ -1,6 +1,6 @@
 # openlayers 扩展 Loading
 
-> 提供地图图层加载时的loading层和事件，支持openlayers3+ 以上。
+> 提供地图图层加载时的loading层和事件，支持openlayers3+和openlayers4+。
 
 > 基于eblondel的ol3-loadingpanel修改，原有扩展已不能使用。 [原地址](https://github.com/eblondel/ol3-loadingpanel)
 
@@ -22,22 +22,35 @@ npm run build
 
 ## Use
 
-> `new ol.control.Loading(options)`
+> `new ol.control.Loading(options)` or `new olControlLoading(options)`
 
 ### CDN
 
 ```bash
-https://unpkg.com/ol-control-loading@1.2.0/dist/ol-control-loading.min.js
-https://unpkg.com/ol-control-loading@1.2.0/dist/ol-control-loading.js
-https://unpkg.com/ol-control-loading@1.2.0/dist/static/css/ol-control-loading.css
-https://unpkg.com/ol-control-loading@1.2.0/dist/static/css/ol-control-loading.min.css
+https://unpkg.com/ol-control-loading@1.3.0/dist/ol-control-loading.min.js
+https://unpkg.com/ol-control-loading@1.3.0/dist/ol-control-loading.js
+https://unpkg.com/ol-control-loading@1.3.0/dist/ol-control-loading.css
+https://unpkg.com/ol-control-loading@1.3.0/dist/ol-control-loading.min.css
 ```
 
 ### NPM
 
 ```bash
 npm install ol-control-loading --save
+
 import 'ol-control-loading'
+new ol.control.Loading({
+  className: 'hmap-loading-panel',
+  widget: 'animatedGif',
+})
+
+// or
+
+import olControlLoading from 'ol-control-loading'
+new olControlLoading({
+ className: 'hmap-loading-panel',
+ widget: 'animatedGif',
+})
 ```
 
 ## Examples
@@ -54,11 +67,11 @@ import 'ol-control-loading'
 | :--- | :--- | :---------- |
 | `className` | `String` | 插件dom类名，默认值为 ``hmap-loading-panel`` |
 | `widget` | `String` | loading类型: ``animatedGif`` 或者 ``progressBar`` （默认值）|
-| `progressMode` | `String` | mode to use for reporting progress: ``tile`` (default) or ``layer``|
+| `progressMode` | `String` | 进度条模式: ``tile`` (default) or ``layer``|
 | `showPanel` | `Boolean` | loading面板是否显示，默认为 ``true``. 不想使用默认时，可以通过事件自定义loading |
 | `onStart` | `Object` | 监听开始事件 |
 | `onProgress` | `Object` | 加载进度 |
-| `onEnd` | `Object` | 某次图层加载完成事件 |
+| `onEnd` | `Object` | 图层加载完成事件 |
 
 #### Extends
 

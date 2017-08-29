@@ -13,8 +13,9 @@ module.exports = {
     cssSourceMap: true
   },
   base: {
-    libraryName: 'ol-control-loading',
+    fileName: 'ol-control-loading',
+    libraryName: 'olControlLoading',
     distDirectory: path.resolve(__dirname, '../dist'),
-    assetsSubDirectory: 'static'
+    assetsSubDirectory: ''
   }
 }

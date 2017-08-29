@@ -3,7 +3,7 @@
  * @desc 全局地图加载loading
  */
 import * as css from './dom/css'
-let htmlUtils = require('nature-dom-util/src/domUtils')
+import * as htmlUtils from 'nature-dom-util/src/utils/domUtils'
 import './scss/loading.scss'
 ol.control.Loading = function (params) {
   /**
@@ -332,5 +332,5 @@ ol.control.Loading.prototype.setMap = function (map) {
   }
 }
 
-let _olControlLoading_ = ol.control.Loading
-export default _olControlLoading_
+let olControlLoading = ol.control.Loading
+export default olControlLoading
