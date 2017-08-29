@@ -5,7 +5,7 @@
 > 基于eblondel的ol3-loadingpanel修改，原有扩展已不能使用。 [原地址](https://github.com/eblondel/ol3-loadingpanel)
 
 [![Build Status](https://www.travis-ci.org/aurorafe/ol-control-loading.svg?branch=master)](https://www.travis-ci.org/aurorafe/ol-control-loading)
-[![NPM](https://nodei.co/npm/aurorafe/ol-control-loading.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/aurorafe/ol-control-loading/)
+[![NPM](https://nodei.co/npm/ol-control-loading.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ol-control-loading/)
 
 ## build
 
@@ -27,10 +27,10 @@ npm run build
 ### CDN
 
 ```bash
-https://unpkg.com/ol-control-loading@1.3.0/dist/ol-control-loading.min.js
-https://unpkg.com/ol-control-loading@1.3.0/dist/ol-control-loading.js
-https://unpkg.com/ol-control-loading@1.3.0/dist/ol-control-loading.css
-https://unpkg.com/ol-control-loading@1.3.0/dist/ol-control-loading.min.css
+https://unpkg.com/ol-control-loading@1.3.1/dist/ol-control-loading.min.js
+https://unpkg.com/ol-control-loading@1.3.1/dist/ol-control-loading.js
+https://unpkg.com/ol-control-loading@1.3.1/dist/ol-control-loading.css
+https://unpkg.com/ol-control-loading@1.3.1/dist/ol-control-loading.min.css
 ```
 
 ### NPM
